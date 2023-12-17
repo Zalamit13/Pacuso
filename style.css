@@ -1,0 +1,98 @@
+.navbar .fth, .trd, .snd, .fst{
+    border: 1px solid black;
+}
+
+/*
+.main-hero {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+}
+
+.main-hero .bg {
+  position: relative;
+  width: 1366px;
+  height: 663px;
+  object-fit: cover;
+}
+
+.main-hero .section-hero {
+  position: absolute;
+  width: 1120px;
+  height: 306px;
+  top: 112px;
+  left: 123px;
+}
+
+.main-hero .div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-hero .text-wrapper {
+  width: 1120px;
+  height: 85px;
+  margin-top: -3px;
+  margin-left: -2px;
+  font-family: "Gulzar", serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 61.2px;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.2px;
+  direction: rtl;
+}
+
+.main-hero .text-wrapper-2 {
+  width: 1120px;
+  margin-left: -2px;
+  font-family: "Gulzar", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.2px;
+  direction: rtl;
+}
+
+.main-hero .hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 19px 10px;
+  position: absolute;
+  top: 219px;
+  left: 405px;
+  background-color: #782c28;
+  border: 2px solid;
+  border-color: #000000;
+}
+
+.main-hero .text-wrapper-3 {
+  width: fit-content;
+  margin-top: -2px;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 49px;
+  white-space: nowrap;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.2px;
+  direction: rtl;
+}
+*/

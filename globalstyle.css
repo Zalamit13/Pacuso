@@ -1,0 +1,142 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Reem+Kufi:500");
+@import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Gulzar&display=swap");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*navigation bar style*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  margin-right: 300px;
+  margin-left: 300px;
+  gap: 20px;
+}
+.navbar .half-circle {
+  width: 45px;
+  height: auto;
+  object-fit: cover;
+}
+.navbar .pacuso-logo {
+  margin-left: auto;
+  width: 87px;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid transparent; /* Initial border style (transparent) */
+  transition: border-color 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transition for border color and opacity */
+}
+.navbar .pacuso-logo:hover {
+  border-color: #782c28; /* Border color on hover */
+}
+.navbar .right_circle{
+  margin-left: auto;
+}
+.navbar .left_circle{
+  margin-right: auto;
+}
+.navbar .navbar_contents{
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  gap: 200px;
+}
+.navbar .navbar_links{
+  gap: 40px;
+  display: flex;
+  margin: 20px;
+  padding: 0px;
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+.navbar .link {
+  width: fit-content;
+  font-family: "Reem Kufi", Helvetica;
+  font-weight: 500;
+  color: var(--black);
+  font-size: 24px;
+  letter-spacing: 0;
+  direction: rtl;
+  position: relative;
+  display: inline-block; /* Ensure links are displayed as blocks */
+}
+.navbar .link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px; /* Height of the underline */
+  background-color: #782c28; /* Color of the underline */
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out; /* Animation transition */
+}
+.navbar .link:hover::after {
+  width: 100%; /* Expand the underline on hover */
+}
+
+.link.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.link .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%; /* Position the dropdown below the link text */
+  left: 50%; /* Center the dropdown menu */
+  transform: translateX(-50%); /* Adjust for centering */
+}
+.link .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.link .dropdown-content a:hover {
+  background-color: #ddd;
+}
+/* Show the dropdown menu on hover */
+.link:hover .dropdown-content {
+  display: block;
+}
