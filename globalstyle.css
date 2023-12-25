@@ -1,13 +1,15 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Reem+Kufi:500");
-@import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Gulzar&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Gulzar&family=Milonga&display=swap');
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 html,
 body {
+  background-image: url('./resources/ornaments.png');
+  background-repeat: repeat;
+  background-size: 1000px;
   margin: 0px;
   height: 100%;
 }
@@ -38,6 +40,7 @@ body{
 
 /*navigation bar style*/
 .navbar {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid grey;
