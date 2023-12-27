@@ -172,3 +172,74 @@ main{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* Other Pages Css code */
+.page_title, .year{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  position: relative;
+}
+.page_title::after, .year::after {
+  content: '';
+  display: block;
+  width: 30%; /* Adjust the width as needed */
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.title_text{
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.page_title .back_arrow{
+  width: 25px;
+  height: auto;
+}
+
+.act{
+  background-color: #F5F5F5;
+  margin: 20px;
+  padding: 20px;
+  text-align: right;
+}
+.act .act_text{
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 24px;
+  text-align: justify;
+  direction: rtl;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+.act .act_title{
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.pres_card{
+  background-color: #F5F5F5;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+}
+.pres_pic{
+  width: 260px;
+  height: auto;
+  border-radius: 15px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.pres_pic:hover{
+  box-shadow:  10px 10px 0px #817d8f, -10px -10px 0px #817d8f;
+}
+.pres_text{
+  margin-left: auto;
+  text-align: right;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 24px;
+}

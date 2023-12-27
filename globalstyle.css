@@ -33,9 +33,14 @@ a {
   color: var(--black);
 }
 
+main{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 body{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /*navigation bar style*/
@@ -80,17 +85,14 @@ body{
   gap: 615px;
 }
 .navbar .navbar_links {
-  gap: 40px;
   display: flex;
-  margin: 20px;
-  padding: 0px;
+  padding: 20px;
 }
 .navbar a {
   text-align: center;
   text-decoration: none;
 }
 .navbar .link {
-  width: fit-content;
   font-family: "Reem Kufi", Helvetica;
   font-weight: 500;
   color: var(--black);
@@ -99,6 +101,7 @@ body{
   direction: rtl;
   position: relative;
   display: inline-block; /* Ensure links are displayed as blocks */
+  margin-right: 40px; /* Adjust the default gap */
 }
 .navbar .link::after {
   content: "";
@@ -118,7 +121,6 @@ body{
 
 .link.dropdown {
   position: relative;
-  display: inline-block;
 }
 .link .dropdown-content {
   display: none;
@@ -147,7 +149,7 @@ body{
 }
 
 .footer{
-  margin-top: 30px;
+  margin-top: auto;
   background-color: #60646e;
   color: white;
   display: flex;
