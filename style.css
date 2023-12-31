@@ -221,6 +221,9 @@ main{
   font-weight: bold;
   padding-bottom: 10px;
 }
+.act .blue{
+  color: blue;
+}
 
 .pres_card{
   background-color: #F5F5F5;
@@ -242,4 +245,36 @@ main{
   text-align: right;
   font-family: "Baloo Bhaijaan 2", sans-serif;
   font-size: 24px;
+}
+
+
+/*Media Quaries go here*/
+/* Media query for screens smaller than 1628px */
+@media (max-width: 1628px) {
+  main {
+    margin-left: 200px; /* Adjust as needed */
+    margin-right: 200px; /* Adjust as needed */
+  }
+}
+
+/* Media query for screens smaller than 1366px */
+@media (max-width: 1366px) {
+  main {
+    margin-left: 150px; /* Adjust as needed */
+    margin-right: 150px; /* Adjust as needed */
+  }
+}
+
+/* Media query for screens smaller than 1024px */
+@media (max-width: 1024px) {
+  main {
+    margin-left: 100px; /* Adjust as needed */
+    margin-right: 100px; /* Adjust as needed */
+  }
+}
+
+iframe {
+  justify-self: center;
+  border: 1px solid #000; /* Thin border */
+  border-radius: 15px; /* Border radius */
 }
