@@ -246,6 +246,13 @@ main{
   font-family: "Baloo Bhaijaan 2", sans-serif;
   font-size: 24px;
 }
+iframe {
+  justify-self: center;
+  border: 5px solid gray;
+  border-radius: 15px;
+  height: 500px;
+  width: 100%;
+}
 
 
 /*Media Quaries go here*/
@@ -271,10 +278,4 @@ main{
     margin-left: 100px; /* Adjust as needed */
     margin-right: 100px; /* Adjust as needed */
   }
-}
-
-iframe {
-  justify-self: center;
-  border: 1px solid #000; /* Thin border */
-  border-radius: 15px; /* Border radius */
 }
