@@ -1,9 +1,10 @@
 main{
   background-color: white;
-  margin-left: 300px;
-  margin-right: 300px;
+  justify-content: center;
+  align-self: center;
   box-shadow: #7a7a7a;
   box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.5), -10px 0 10px -5px rgba(0, 0, 0, 0.5);
+  max-width: 1024px;
 }
 .main-hero {
   display: flex;
@@ -28,11 +29,10 @@ main{
   justify-content: center;
   position: absolute;
   gap: 40px;
-  padding: 50px;
 }
 
 .main-hero .pacuso-logo-white{
-  width: 170px;
+  width: 20%;
   height: auto;
   object-fit: cover;
 }
@@ -42,7 +42,7 @@ main{
   margin-left: -2px;
   font-family: "Gulzar", serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 2em;
   position: relative;
   color: #ffffff;
   text-align: center;
@@ -53,7 +53,7 @@ main{
   margin-left: -2px;
   font-family: 'Milonga', serif;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 1.8em;
   position: relative;
   color: #ffffff;
   text-align: center;
@@ -64,31 +64,41 @@ main{
   margin-left: -2px;
   font-family: 'Milonga', serif;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 1.8em;
   position: relative;
   color: #ffffff;
   text-align: center;
   letter-spacing: 0.2px;
 }
 
-.main-hero .hero-button {
-  color: whitesmoke;
-  background-color: #782c28;
-  align-items: center;
-  justify-content: center;
-  padding: 19px 10px;
-  border: 2px solid;
-  font-family: "Baloo Bhaijaan 2", sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  border-color: #000000;
-  margin-top: 50px;
-  transition: box-shadow 0.3s ease-in-out;
+/*media queries for main hero*/
+@media screen and (max-width: 700px) {
+  .main-hero{
+    gap: 0px;
+  }
+  .main-hero .section-hero{
+    gap: 10px;
+  }
+
+  .main-hero .text-wrapper-Fr,
+  .main-hero .text-wrapper-En {
+    font-size: 1.2em;
+    line-height: 1em;
+  }
+
+  .main-hero .text-wrapper-Ar{
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  .main-hero .pacuso-logo-white {
+    padding: 0px;
+  }
 }
-.main-hero .hero-button:hover {
-  box-shadow: 23px 23px 0px #000000;
+@media screen and (max-width: 420px){
+  .main-hero .pacuso-logo-white {
+    display: none;
+  }
 }
 
 
@@ -194,8 +204,13 @@ main{
 
 .title_text{
   font-family: "Baloo Bhaijaan 2", sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: bold;
+}
+@media screen and (max-width: 700px){
+  .title_text {
+    font-size: 1.2em;
+  }
 }
 
 .page_title .back_arrow{
@@ -211,7 +226,7 @@ main{
 }
 .act .act_text{
   font-family: "Baloo Bhaijaan 2", sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: justify;
   direction: rtl;
   line-height: 1.5;
@@ -221,6 +236,13 @@ main{
   font-weight: bold;
   padding-bottom: 10px;
 }
+
+@media screen and (max-width: 700px){
+  .act .act_text {
+    font-size: 1em;
+  }
+}
+
 .act .blue{
   color: blue;
 }
@@ -255,27 +277,10 @@ iframe {
 }
 
 
-/*Media Quaries go here*/
-/* Media query for screens smaller than 1628px */
-@media (max-width: 1628px) {
-  main {
-    margin-left: 200px; /* Adjust as needed */
-    margin-right: 200px; /* Adjust as needed */
-  }
-}
 
-/* Media query for screens smaller than 1366px */
-@media (max-width: 1366px) {
+@media (max-width: 1000px) {
   main {
-    margin-left: 150px; /* Adjust as needed */
-    margin-right: 150px; /* Adjust as needed */
-  }
-}
-
-/* Media query for screens smaller than 1024px */
-@media (max-width: 1024px) {
-  main {
-    margin-left: 100px; /* Adjust as needed */
-    margin-right: 100px; /* Adjust as needed */
+    justify-self: auto;
+    align-items: baseline;
   }
 }
