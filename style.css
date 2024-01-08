@@ -4,7 +4,8 @@ main{
   align-self: center;
   box-shadow: #7a7a7a;
   box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.5), -10px 0 10px -5px rgba(0, 0, 0, 0.5);
-  max-width: 1024px;
+  max-width: 1200px;
+  min-width: 1024px;
 }
 .main-hero {
   display: flex;
@@ -252,6 +253,7 @@ main{
   margin: 20px;
   padding: 20px;
   display: flex;
+  gap: 15px;
 }
 .pres_pic{
   width: 260px;
@@ -264,9 +266,11 @@ main{
 }
 .pres_text{
   margin-left: auto;
-  text-align: right;
+  text-align: justify;
+  direction: rtl;
   font-family: "Baloo Bhaijaan 2", sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
+  line-height: 1.2;
 }
 iframe {
   justify-self: center;
@@ -275,7 +279,19 @@ iframe {
   height: 500px;
   width: 100%;
 }
-
+@media screen and (max-width: 600px){
+  .pres_card {
+    flex-direction: column;
+    align-items: end;
+  }
+  .pres_pic{
+    align-self: center;
+    width: 180px;
+  }
+  .pres_text{
+    font-size: 1.2em;
+  }
+}
 
 
 @media (max-width: 1000px) {
